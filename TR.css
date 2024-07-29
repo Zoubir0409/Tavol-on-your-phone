@@ -14,7 +14,7 @@
 	height: 100;
 }
 .nameD{
-	background-color: #777777;
+	background-color: #4d4b4b;
 	border-bottom: 5px solid #cccccc;
 	width: 873px;
 	height: 40px;
@@ -36,9 +36,6 @@
 	height:210px;
 	border: none;
 }
-i{
-	margin-left: 20px;
-}
 .cost{
 	background-color: #ed771f;
 	border-bottom: 4px solid #d56c1c;
@@ -49,7 +46,7 @@ i{
 	background-color: #f8f8f8;
 }
 .parametr{
-	background-color: #f2f2f2;
+	background-color: #e0dfdf;
 	font-size:20px;
 }
 .TD{
@@ -59,4 +56,8 @@ i{
 }
 .TDT{
 	color: black;
+}
+.arrow{
+	margin-left: 20px;
+	margin-right: 20px;
 }

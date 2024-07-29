@@ -1,4 +1,7 @@
 @charset "utf-8";
+html{
+	scroll-behavior: smooth;
+}
 body {
 	margin: 0px;
 	padding: 0px;
@@ -182,6 +185,9 @@ input, textarea, select {
 .overlay_field_button button:hover {
 	background-color: #444;
 }
+
+	
+
 .top_container {
 	float: left;
 	width: 100%;
@@ -211,10 +217,6 @@ input, textarea, select {
     height: 100%;
 	color: #000;
 	text-decoration: none;
-}
-.top_logo a:hover {
-	background: #F8F8F8;
-	color: #f8c42f;
 }
 .top_logo_img {
     width: 100%;
@@ -260,8 +262,8 @@ input, textarea, select {
     float: left;
     margin-top:1.6px;
 	margin-left: -20px;
-    width: 10px;
-    height: 8px;
+    width: 20px;
+    height: 0px;
 }
 .langs_bottom {
     position: absolute;
@@ -343,7 +345,7 @@ input, textarea, select {
 .top_call_block{
 	position: absolute;
 	z-index: 1;
-	left: 313px;
+	left: 35%;
 	top: 60px;
 }
 .top_login_block {
@@ -818,7 +820,7 @@ input, textarea, select {
 	color: #352c0c;
 }
 .main_search_sub_links a:hover {
-    color: #ed771f;
+    color: white;
 }
 .main_search_sub_links a:hover:before {
 	content: "\f0da";
@@ -1126,6 +1128,9 @@ input, textarea, select {
 .announcements_container:first-child .announcements_wrapper {
 	padding: 30px 25px 30px 25px;
 }
+.next_wrapper{
+	margin-top: -90px;
+}
 .main_content {
 	float: left;
 	position: relative;
@@ -1144,10 +1149,10 @@ input, textarea, select {
     width: 100%;
     background: url(../images/title_bg.png);
     box-sizing: border-box;
-    border-left: solid 5px #c5a038;
+    border-left: solid 5px #f39c12;
     font-size: 18px;
     font-weight: bold;
-    color: #c5a038;
+    color: #f39c12;
 }
 
 .announcements_title_parts:before {
@@ -1240,13 +1245,16 @@ input, textarea, select {
 .announcement_block:hover .announcement_title {
 	background: #F60;
 	color: #FFF;
+	text-shadow: none !important;
 }
 .announcement_block:hover .announcement_price {
 	background: #F60;
 	color: #FFF;
+	text-shadow: none !important;
 }
 .announcement_block:hover .exchange_icon {
 	background-color: #FFF;
+	text-shadow: none !important;
 }
 .announcement_block:hover .announcement_price_right {
 	background: url(../images/location_icon_white.png) left center no-repeat;
@@ -1258,6 +1266,7 @@ input, textarea, select {
 .announcement_block a, .announcement_block a:visited {
 	color: #352c0c;
 	text-decoration: none;
+    text-shadow: none !important;
 }
 .announcement_block a:hover, .announcement_block a:hover .announcement_title, .announcement_block a:hover .announcement_price_left {
 	color: #FFF !important;
@@ -1310,15 +1319,7 @@ input, textarea, select {
 	text-align: center;
 	transition: all 0.3s;
 }
-.announcement_category:before {
-	content: "\E482";
-	position: absolute;
-    margin-top: -3px;
-    margin-left: -18px;
-	font-family: 'Glyphicons Regular';
-    font-size: 14px;
-    color: #FFF;
-}
+
 .announcement_title {
 	padding: 9px 50px 0px 12px;
 	background: #F5F5F5;
@@ -1344,6 +1345,7 @@ input, textarea, select {
 }
 .exchange_icon_block {
 	margin-top: -6px;
+	margin-bottom: -4px;
 	display: inline-block;
 	position: relative;
 	width: 24px;
@@ -1351,15 +1353,6 @@ input, textarea, select {
 }
 .exchange_icon {
 	position: absolute;
-}
-.azn_icon:before {
-	content: "\E468";
-	position: absolute;
-    top: 1px;
-	font: 24px/1em 'Glyphicons Regular';
-    font-size: 19px;
-    color: #ed771f;
-	text-shadow: 1px 1px 1px #FFF;
 }
 .announcement_block a:hover .azn_icon:before {
 	color: #FFF;
@@ -1398,28 +1391,6 @@ input, textarea, select {
 	font-size: 12px;
 	font-weight: normal;
 	color: #999;
-}
-.announcement_premium_icon {
-	position: absolute;
-	top: -24px;
-	right: -2px;
-	font-size: 17px;
-	font-weight: bold;
-	z-index: 1;
-}
-.announcement_premium_icon:before {
-	content: '\f3a5';
-	font-family: FontAwesome;
-	color: #fe942e;
-}
-.announcement_premium_icon:after {
-	content: 'P';
-	position: absolute;
-	margin-top: 1px;
-	margin-left: -12.8px;
-	font-size: 11px;
-	font-weight: bold;
-	color: #fff;
 }
 .announcement_description {
 	float: left;
@@ -2694,8 +2665,8 @@ input, textarea, select {
 	font-family: FontAwesomeBrands;
 }
 .info_block_payment_premium:hover {
-	background: #e0cc6c;
-    border-bottom-color: #c5af4a;
+	background: black;
+    border-bottom-color: #f39c12;
 }
 .info_block_payment_up:hover {
     background: #92c584;
@@ -3410,4 +3381,9 @@ input, textarea, select {
 	height: 17px;
 	width: 26px;
 }
-
+[itemprop = "image"]{
+	transition: 1s;
+}
+.announcement_block:hover [itemprop = "image"]{
+	width: 300px     ;
+}
